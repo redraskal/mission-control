@@ -1,0 +1,63 @@
+main {
+	margin: auto;
+	padding: calc(var(--padding) * 6);
+	border: var(--border-width) solid var(--primary);
+}
+
+h1 {
+	color: var(--primary);
+}
+
+label {
+	color: var(--primary);
+}
+
+input {
+	border-color: var(--primary);
+}
+
+input:not([type="submit"]) {
+	color: var(--green);
+}
+
+#horizon {
+	position: fixed;
+	left: 0;
+	width: 100vw;
+	height: 40rem;
+	margin-top: -10rem;
+	mask-image: radial-gradient(
+		circle,
+		black,
+		black 50%,
+		transparent 100%
+	);
+	overflow: hidden;
+	pointer-events: none;
+	user-select: none;
+	z-index: -1;
+}
+
+#horizon:before {
+	content: "";
+	position: absolute;
+	inset: 0;
+	opacity: 0.8;
+}
+
+#horizon:after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: -50%;
+	width: 200%;
+	aspect-ratio: 1 / 0.4;
+	background: var(--background);
+	border-radius: 50%;
+	box-shadow: 
+		inset 5px 5px 15px var(--foreground),
+		0 0 20px 15px red,
+		0 0 40px 20px var(--green),
+		0 0 120px 20px var(--blue-light);
+	filter: blur(1px);
+}

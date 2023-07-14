@@ -1,0 +1,12 @@
+form {
+	display: inline-flex;
+	flex-direction: column;
+	gap: calc(var(--padding) * 2);
+	width: 100%;
+}
+
+form > div {
+	display: inline-flex;
+	gap: var(--padding);
+	justify-content: center;
+}

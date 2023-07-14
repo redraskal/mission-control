@@ -1,0 +1,15 @@
+progress {
+	appearance: none;
+	-webkit-appearance: none;
+	background: var(--accents-1);
+	color: var(--foreground);
+	border: var(--border-width) solid var(--accents-2);
+}
+
+::-moz-progress-bar {
+	background: var(--primary);
+}
+
+::-webkit-progress-value {
+	background: var(--primary);
+}

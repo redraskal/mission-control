@@ -1,0 +1,22 @@
+:root {
+	--background: black;
+	--accents-1: #111;
+	--accents-2: #333;
+	--accents-3: #444;
+	--accents-4: #666;
+	--accents-5: #888;
+	--accents-6: #999;
+	--accents-7: #EAEAEA;
+	--accents-8: #FAFAFA;
+	--foreground: #FFF;
+
+	--primary-lighter: #F7D4D6;
+	--primary-light: #FF1A1A;
+	--primary: #ff5100;
+	--primary-dark: red;
+
+	--blue: color(display-p3 0 0 1 / 1);
+	--blue-light: color(display-p3 0 0.412 1 / 1);
+	--yellow: color(display-p3 1 1 0 / 1);
+	--green: color(display-p3 0 1 0 / 1);
+}

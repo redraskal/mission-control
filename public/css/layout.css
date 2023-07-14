@@ -1,0 +1,30 @@
+:root {
+	--padding: 0.5rem;
+	--border-width: 2px;
+	--page-width: 60rem;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	float: none;
+	max-width: var(--page-width);
+	padding: 2rem;
+
+	background: var(--background);
+	color: var(--foreground);
+}
+
+main, header {
+	display: inline-block;
+}
+
+hr {
+	width: 100%;
+	height: var(--border-width);
+	border: 0;
+	background: var(--accents-1);
+}

@@ -1,6 +1,13 @@
 import { Route, html } from "gateway";
 
 export default class implements Route {
+	head() {
+		return html`
+			<title>Mission Control</title>
+			<link rel="stylesheet" href="/css/style.css" />
+		`;
+	}
+
 	body() {
 		return html`
 			<h1>Page not found</h1>
