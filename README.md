@@ -1,4 +1,4 @@
-# Gateway template
+# mission control
 
 ## To install dependencies:
 

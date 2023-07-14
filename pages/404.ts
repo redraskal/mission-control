@@ -10,4 +10,4 @@ export default class implements Route {
 			</a>
 		`;
 	}
-};
+}
