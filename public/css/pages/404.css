@@ -1,0 +1,46 @@
+main {
+	position: relative;
+	margin: auto;
+	height: 60%;
+	padding: calc( var(--padding) * 6);
+	background: 
+		linear-gradient(var(--primary), var(--background)),
+		url("/img/nasa-8Hjx3GNZYeA-unsplash.jpg") no-repeat;
+	background-size: cover;
+	background-blend-mode: hard-light;
+	color: var(--primary);
+}
+
+@media only screen and (max-width: 600px) {
+	body {
+		margin: 0;
+		padding: 0;
+	}
+
+	main {
+		width: 100%;
+	}
+}
+
+h1 {
+	color: var(--background);
+	background: unset;
+	font-size: calc(4vw + 20px);
+	text-align: left;
+}
+
+a {
+	width: 100%;
+}
+
+button {
+	width: 100%;
+	font-size: calc(2vw + 20px);
+}
+
+footer {
+	position: absolute;
+	bottom: 1rem;
+	left: 0;
+	right: 0;
+}

@@ -3,18 +3,25 @@ import { Route, html } from "gateway";
 export default class implements Route {
 	head() {
 		return html`
-			<title>Mission Control</title>
+			<title>404 - Mission Control</title>
 			<link rel="stylesheet" href="/css/style.css" />
+			<link rel="stylesheet" href="/css/pages/404.css" />
 		`;
 	}
 
 	body() {
 		return html`
-			<h1>Page not found</h1>
-			<p>Sorry, we can't find that page.</p>
-			<a href="/">
-				<button>Back to Home</button>
-			</a>
+			<main>
+				<h1>Lost in space?</h1>
+				<a href="/">
+					<button>travel home</button>
+				</a>
+				<footer>
+					photo by <a href="https://unsplash.com/@nasa" target="_blank">NASA</a>
+					on
+					<a href="https://unsplash.com/photos/8Hjx3GNZYeA" target="_blank">Unsplash</a>
+				</footer>
+			</main>
 		`;
 	}
 }

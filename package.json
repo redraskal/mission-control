@@ -13,7 +13,7 @@
 		"prettier": "prettier --write ."
 	},
 	"dependencies": {
-		"gateway": "redraskal/gateway#main",
-		"prettier": "^3.0.0"
+		"prettier": "^3.0.0",
+		"redraskal/gateway#main": "redraskal/gateway#main"
 	}
 }

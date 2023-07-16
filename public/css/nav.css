@@ -1,0 +1,39 @@
+nav {
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	align-items: stretch;
+	flex-wrap: wrap;
+}
+
+nav a, nav a button {
+	display: flex;
+	flex-grow: 1;
+	justify-content: center;
+}
+
+nav a:first-child button {
+	border-left: 0;
+}
+
+nav a:not(:first-child) button {
+	border-left: 0;
+}
+
+nav a:last-child button {
+	border-right: 0;
+}
+
+nav a button {
+	border-top: 0;
+	border-bottom: 0;
+}
+
+nav a[aria-current="page"] button {
+	background: var(--primary);
+	border-right: var(--border-width) solid black;
+}
+
+nav a[aria-current="page"] button:not(:hover) {
+	color: var(--background);
+}

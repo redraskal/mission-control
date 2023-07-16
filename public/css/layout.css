@@ -1,7 +1,7 @@
 :root {
 	--padding: 0.5rem;
 	--border-width: 2px;
-	--page-width: 60rem;
+	--page-width: max(90vw, 70rem);
 }
 
 body {
@@ -26,5 +26,14 @@ hr {
 	width: 100%;
 	height: var(--border-width);
 	border: 0;
-	background: var(--accents-1);
+	/* background: var(--accents-1); */
+	background: var(--primary);
+}
+
+hr.yellow {
+	background: var(--yellow);
+}
+
+hr.green {
+	background: var(--green);
 }

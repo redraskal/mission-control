@@ -1,0 +1,88 @@
+main {
+	position: relative;
+	margin: var(--padding) 0 var(--padding) 0;
+	border: var(--border-width) solid var(--primary);
+	width: 100%;
+}
+
+h1,
+h2 {
+	background: var(--primary);
+	color: var(--background);
+	width: 100%;
+	margin: 0;
+}
+
+h3 {
+	font-weight: 400;
+	margin: 0;
+}
+
+label {
+	color: var(--primary);
+}
+
+input {
+	border-color: var(--primary);
+}
+
+input:not([type="submit"]) {
+	color: var(--green);
+}
+
+ul {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+ul > li {
+	position: relative;
+	color: var(--yellow);
+	border: var(--border-width) solid;
+}
+
+ul > li > h3 {
+	font-size: calc(2vw + 10px);
+}
+
+ul > li > h3,
+ul > li > p {
+	padding: calc(var(--padding) * 2);
+}
+
+ul > li > h3 {
+	padding-bottom: 0;
+}
+
+ul > li > p {
+	margin: 0;
+}
+
+ul > li > button {
+	width: 100%;
+	--button-color: var(--yellow);
+	border-left: 0;
+	border-right: 0;
+	border-bottom: 0;
+}
+
+ul > li > button:not(:hover):not(:disabled) {
+	color: var(--background);
+	background: var(--accents-6);
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+
+	color: var(--primary);
+	text-transform: uppercase;
+	font-weight: 500;
+}
