@@ -1,19 +1,20 @@
 {
-	"name": "mission-control",
-	"devDependencies": {
-		"bun-types": "latest"
-	},
-	"peerDependencies": {
-		"typescript": "^5.0.0"
-	},
-	"scripts": {
-		"start": "bunx gateway",
-		"dev": "bunx gateway dev",
-		"gen": "bunx gateway gen",
-		"prettier": "prettier --write ."
-	},
-	"dependencies": {
-		"prettier": "^3.0.0",
-		"redraskal/gateway#main": "redraskal/gateway#main"
-	}
+  "name": "mission-control",
+  "devDependencies": {
+    "bun-types": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "scripts": {
+    "start": "bunx gateway",
+    "dev": "bunx gateway dev",
+    "gen": "bunx gateway gen",
+    "prettier": "prettier --write ."
+  },
+  "dependencies": {
+    "bunix-sockets": "Fire-The-Fox/bunix-sockets#15c2127",
+    "prettier": "^3.0.0",
+    "redraskal/gateway#main": "redraskal/gateway#main"
+  }
 }

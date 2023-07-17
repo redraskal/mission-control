@@ -71,8 +71,11 @@ ul > li > button {
 	border-bottom: 0;
 }
 
-ul > li > button:not(:hover):not(:disabled) {
+ul > li > button:hover:not(:disabled) {
 	color: var(--background);
+}
+
+ul > li > button:not(:hover):not(:disabled) {
 	background: var(--accents-6);
 }
 
