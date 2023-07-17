@@ -1,4 +1,5 @@
 import { Data, Route, html } from "gateway";
+import dashboard from "../templates/dashboard";
 
 export default class implements Route {
 	async data() {
@@ -16,30 +17,9 @@ export default class implements Route {
 	}
 
 	body(data: Data<this>, err?: Error) {
-		return html`
-			<main>
-				<h1>MISSION_CONTROL</h1>
-				<hr />
-				<nav>
-					<a href="/projects" aria-current="page">
-						<button>Projects</button>
-					</a>
-					<a href="/volumes">
-						<button>Volumes</button>
-					</a>
-					<a href="/firewall">
-						<button>Firewall</button>
-					</a>
-					<a href="/logs">
-						<button>Logs</button>
-					</a>
-					<a href="/admin">
-						<button>Admin</button>
-					</a>
-				</nav>
-				<hr />
-				<h2>Projects</h2>
-				<hr />
+		return dashboard(
+			"/projects",
+			html`
 				<section>
 					<h3>Test project</h3>
 					<table>
@@ -58,14 +38,13 @@ export default class implements Route {
 									</a>
 								</td>
 								<td>
-									<a href="/"> garage </a>
+									<a href="/">garage</a>
 								</td>
 							</tr>
 						</tbody>
 					</table>
 				</section>
-				<footer>dff4728de647d5b573f2e220fdacd1b8485e0e68</footer>
-			</main>
-		`;
+			`
+		);
 	}
 }

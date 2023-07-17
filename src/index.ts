@@ -1,1 +1,8 @@
-console.log("Hello via Bun!");
+export const gitCommitHash = Bun.spawnSync({
+	cmd: ["git", "rev-parse", "HEAD"],
+	stdout: "pipe",
+})
+	.stdout.toString()
+	.trim();
+
+console.log(`Hello via Bun @ ${gitCommitHash}!`);

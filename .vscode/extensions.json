@@ -1,6 +1,7 @@
 {
 	"recommendations": [
 		"esbenp.prettier-vscode",
-		"runem.lit-plugin"
+		"tobermory.es6-string-html",
+		"formulahendry.auto-close-tag"
 	]
 }
