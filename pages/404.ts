@@ -18,7 +18,7 @@ export default class implements Route {
 				</a>
 				<footer>
 					photo by <a href="https://unsplash.com/@nasa" target="_blank">NASA</a>
-					on
+					<span> on </span>
 					<a href="https://unsplash.com/photos/8Hjx3GNZYeA" target="_blank">Unsplash</a>
 				</footer>
 			</main>

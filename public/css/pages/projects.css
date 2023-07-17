@@ -13,8 +13,13 @@ h2 {
 	margin: 0;
 }
 
+section {
+	padding: 0 var(--padding) var(--padding) var(--padding);
+}
+
 h3 {
-	font-weight: 400;
+	text-align: left;
+	color: var(--yellow);
 	margin: 0;
 }
 
@@ -28,55 +33,6 @@ input {
 
 input:not([type="submit"]) {
 	color: var(--green);
-}
-
-ul {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-
-ul > li {
-	position: relative;
-	color: var(--yellow);
-	border: var(--border-width) solid;
-}
-
-ul > li > h3 {
-	font-size: calc(2vw + 10px);
-}
-
-ul > li > h3,
-ul > li > p {
-	padding: calc(var(--padding) * 2);
-}
-
-ul > li > h3 {
-	padding-bottom: 0;
-}
-
-ul > li > p {
-	margin: 0;
-}
-
-ul > li > button {
-	width: 100%;
-	--button-color: var(--yellow);
-	border-left: 0;
-	border-right: 0;
-	border-bottom: 0;
-}
-
-ul > li > button:hover:not(:disabled) {
-	color: var(--background);
-}
-
-ul > li > button:not(:hover):not(:disabled) {
-	background: var(--accents-6);
 }
 
 footer {

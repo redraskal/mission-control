@@ -40,14 +40,30 @@ export default class implements Route {
 				<hr />
 				<h2>Projects</h2>
 				<hr />
-				<ul>
-					<li>
-						<h3>$Compose_</h3>
-						<hr class="yellow" />
-						<p>/mnt/user/compose</p>
-						<button>Active - 6 services</button>
-					</li>
-				</ul>
+				<section>
+					<h3>Test project</h3>
+					<table>
+						<thead>
+							<tr>
+								<th>Image</th>
+								<th>Container</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>
+									<a href="/">
+										<span style="color: var(--green)">● </span>
+										dxflrs/amd64_garage:v0.8.1
+									</a>
+								</td>
+								<td>
+									<a href="/"> garage </a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</section>
 				<footer>dff4728de647d5b573f2e220fdacd1b8485e0e68</footer>
 			</main>
 		`;

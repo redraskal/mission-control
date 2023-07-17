@@ -1,0 +1,60 @@
+table {
+	--color: var(--yellow);
+
+	width: 100%;
+	border-collapse: collapse;
+	border-spacing: 0;
+	table-layout: fixed;
+
+	color: var(--color);
+	border-top: var(--border-width) solid var(--color);
+}
+
+th, td {
+	text-align: left;
+	vertical-align: middle;
+	padding: var(--padding);
+	text-transform: uppercase;
+	border-top: var(--border-width) solid var(--color);
+	border-bottom: var(--border-width) solid var(--color);
+}
+
+td:not(:first-child):not(:last-child) {
+	border-top: var(--border-width) solid var(--accents-2);
+	border-bottom: var(--border-width) solid var(--accents-2);
+}
+
+tr:last-child td {
+	border-bottom: none;
+}
+
+tr:hover {
+	background: var(--accents-1);
+	filter: drop-shadow(0 3px 3px rgba(0, 0, 0, 0.05));
+}
+
+th::selection,
+td::selection,
+th a::selection,
+td a::selection {
+	background: var(--color);
+	color: var(--background);
+}
+
+td span {
+	user-select: none;
+}
+
+td > a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+@media only screen
+	and (max-width: 760px), (min-device-width: 768px)
+	and (max-device-width: 1024px) {
+	table, thead, tbody, th, td, tr {
+		display: block;
+	}
+}
