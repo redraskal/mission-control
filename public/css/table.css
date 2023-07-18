@@ -11,12 +11,19 @@ table {
 }
 
 th, td {
-	text-align: left;
-	vertical-align: middle;
 	padding: var(--padding);
+	vertical-align: middle;
+
+	text-align: left;
 	text-transform: uppercase;
+
 	border-top: var(--border-width) solid var(--color);
 	border-bottom: var(--border-width) solid var(--color);
+}
+
+th *, td * {
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 td:not(:first-child):not(:last-child) {
@@ -56,5 +63,6 @@ td > a {
 	and (max-device-width: 1024px) {
 	table, thead, tbody, th, td, tr {
 		display: block;
+		text-align: center;
 	}
 }
