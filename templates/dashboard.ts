@@ -1,5 +1,5 @@
 import { html, HTMLTemplateString } from "gateway";
-import { gitCommitHash } from "../src";
+import { gitCommitHash } from "../src/git";
 
 type NavLink = {
 	href: string;

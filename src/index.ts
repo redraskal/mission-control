@@ -1,8 +1,5 @@
-export const gitCommitHash = Bun.spawnSync({
-	cmd: ["git", "rev-parse", "HEAD"],
-	stdout: "pipe",
-})
-	.stdout.toString()
-	.trim();
+import Migrations from "bun-migrate";
+import database from "./database";
+import "./git";
 
-console.log(`Hello via Bun @ ${gitCommitHash}!`);
+await Migrations.run(database);

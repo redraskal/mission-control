@@ -15,6 +15,7 @@
 	},
 	"dependencies": {
 		"bun-docker": "redraskal/bun-docker#main",
+		"bun-migrate": "redraskal/bun-migrate#main",
 		"redraskal/gateway#main": "redraskal/gateway#main"
 	}
 }
