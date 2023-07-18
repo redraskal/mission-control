@@ -3,7 +3,7 @@ import { Route, html } from "gateway";
 export default class implements Route {
 	head() {
 		return html`
-			<title>404 - Mission Control</title>
+			<title>404 - MISSION_CONTROL</title>
 			<link rel="stylesheet" href="/css/style.css" />
 			<link rel="stylesheet" href="/css/pages/404.css" />
 		`;

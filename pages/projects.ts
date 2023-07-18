@@ -1,7 +1,9 @@
 import { Data, Route, html } from "gateway";
+import { ensureSignedIn } from "../middleware/auth";
 import dashboard from "../templates/dashboard";
 
 export default class implements Route {
+	@ensureSignedIn()
 	async data() {
 		return {
 			containers: [],
@@ -10,7 +12,7 @@ export default class implements Route {
 
 	head() {
 		return html`
-			<title>Home - Mission Control</title>
+			<title>Projects - MISSION_CONTROL</title>
 			<link rel="stylesheet" href="/css/style.css" />
 			<link rel="stylesheet" href="/css/pages/projects.css" />
 		`;
