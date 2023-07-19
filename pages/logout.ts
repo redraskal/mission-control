@@ -5,7 +5,7 @@ import sessions from "../src/sessions";
 export default class implements Route {
 	@ensureSignedIn()
 	async data(req: Request) {
-		const token = getSessionToken(req)!;
+		const token = getSessionToken(req.headers)!;
 		sessions.invalidate(token);
 		return {};
 	}

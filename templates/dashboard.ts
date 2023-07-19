@@ -9,7 +9,7 @@ type NavLink = {
 
 function navLink(link: NavLink) {
 	return html`
-		<a href="${link.href}" ${link.current ? ` aria-current="page"` : ""}>
+		<a href="${link.href}" ${link.current ? `aria-current="page"` : ""}>
 			<button>${link.label}</button>
 		</a>
 	`;
@@ -17,8 +17,8 @@ function navLink(link: NavLink) {
 
 const pages = [
 	{
-		href: "/projects",
-		label: "Projects",
+		href: "/containers",
+		label: "Containers",
 	},
 	{
 		href: "/volumes",
@@ -45,10 +45,10 @@ export default function (path: string, body: HTMLTemplateString) {
 			<hr />
 			<nav>${pages.map((page) => navLink({ ...page, current: page.href == path }))}</nav>
 			<hr />
-			<h2>${pages.find((page) => page.href == path)?.label}</h2>
+			<h2>${pages.find((page) => page.href == path)?.label || path}</h2>
 			<hr />
 			${body}
-			<footer>${gitCommitHash}</footer>
+			<footer>version: ${gitCommitHash}</footer>
 		</main>
 	`;
 }

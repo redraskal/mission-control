@@ -1,3 +1,4 @@
 import createDockerClient from "bun-docker";
 
-export default createDockerClient();
+const docker = await createDockerClient();
+export default docker;
