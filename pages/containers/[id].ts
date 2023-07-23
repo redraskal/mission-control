@@ -26,6 +26,7 @@ export default class implements Route {
 			<title>${data.container.Name || "Container"} - MISSION_CONTROL</title>
 			<link rel="stylesheet" href="/css/style.css" />
 			<link rel="stylesheet" href="/css/templates/dashboard.css" />
+			<link rel="stylesheet" href="/css/pages/container.css" />
 		`;
 	}
 
@@ -33,8 +34,8 @@ export default class implements Route {
 		return dashboard(
 			data.container.Name || "Container",
 			html`
-				<section>
-					<h3>${JSON.stringify(data.container.State)}</h3>
+				<section id="logs">
+					test
 				</section>
 			`
 		);
