@@ -32,7 +32,11 @@ export default class implements Route {
 	body(data: Data<this>) {
 		return dashboard(
 			data.container.Name || "Container",
-			html` <section>${JSON.stringify(data.container, undefined, 4)}</section> `
+			html`
+				<section>
+					<h3>${JSON.stringify(data.container.State)}</h3>
+				</section>
+			`
 		);
 	}
 }
