@@ -21,8 +21,8 @@ const pages = [
 		label: "Containers",
 	},
 	{
-		href: "/volumes",
-		label: "Volumes",
+		href: "/services",
+		label: "Services",
 	},
 	{
 		href: "/firewall",

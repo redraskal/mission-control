@@ -45,7 +45,7 @@ export default class implements Route {
 		if (data?.token) {
 			return Response.redirect("/", {
 				headers: {
-					"set-cookie": `houston=${encodeURIComponent(data.token)}; Secure; HttpOnly`,
+					"set-cookie": `houston=${encodeURIComponent(data.token)}; HttpOnly`,
 				},
 			});
 		}
@@ -55,9 +55,9 @@ export default class implements Route {
 				${err ? html` <p style="color: var(--primary)">Error! ${err?.message}</p> ` : ""}
 				<form method="post">
 					<label for="username">Username</label>
-					<input type="text" id="username" name="username" autofocus required />
+					<input type="text" id="username" name="username" autocorrect="off" autocapitalize="off" autofocus required />
 					<label for="password">Password</label>
-					<input type="password" id="password" name="password" required />
+					<input type="password" id="password" name="password" autocorrect="off" autocapitalize="off" required />
 					<input type="submit" value="Login" />
 				</form>
 				<div id="horizon"></div>

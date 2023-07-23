@@ -1,0 +1,14 @@
+
+kbd::before {
+    content: "[";
+}
+
+kbd {
+    padding: calc(var(--padding) / 4);
+    background: var(--accents-1);
+    /* color: var(--yellow); */
+}
+
+kbd::after {
+    content: "]";
+}

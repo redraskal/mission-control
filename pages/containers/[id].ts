@@ -6,7 +6,7 @@ import dashboard from "../../templates/dashboard";
 
 export default class implements Route {
 	@ensureSignedIn()
-	async data(req: Request, route: MatchedRoute) {
+	async data(_: Request, route: MatchedRoute) {
 		const { data, error } = await docker.get("/containers/{id}/json", {
 			params: {
 				path: {
@@ -21,15 +21,15 @@ export default class implements Route {
 		};
 	}
 
-	head(data: Data<this>, err?: Error) {
+	head(data: Data<this>) {
 		return html`
 			<title>${data.container.Name || "Container"} - MISSION_CONTROL</title>
 			<link rel="stylesheet" href="/css/style.css" />
-			<link rel="stylesheet" href="/css/pages/containers.css" />
+			<link rel="stylesheet" href="/css/templates/dashboard.css" />
 		`;
 	}
 
-	body(data: Data<this>, err?: Error) {
+	body(data: Data<this>) {
 		return dashboard(
 			data.container.Name || "Container",
 			html` <section>${JSON.stringify(data.container, undefined, 4)}</section> `

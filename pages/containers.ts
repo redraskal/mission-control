@@ -34,7 +34,7 @@ export default class implements Route {
 		return html`
 			<title>Containers - MISSION_CONTROL</title>
 			<link rel="stylesheet" href="/css/style.css" />
-			<link rel="stylesheet" href="/css/pages/containers.css" />
+			<link rel="stylesheet" href="/css/templates/dashboard.css" />
 		`;
 	}
 
@@ -43,6 +43,9 @@ export default class implements Route {
 			"/containers",
 			html`
 				<section>
+					<a href="/containers/new">
+						<button>New container <kbd>N</kbd></button>
+					</a>
 					<h3>Test</h3>
 					<table>
 						<thead>
@@ -70,6 +73,7 @@ export default class implements Route {
 						</tbody>
 					</table>
 				</section>
+				<script src="/js/containers/index.js"></script>
 			`
 		);
 	}
