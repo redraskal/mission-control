@@ -106,6 +106,7 @@ export default class implements Route {
 		if (data?.Id) {
 			return Response.redirect(`/containers/${data.Id}`);
 		}
+		// prettier-ignore
 		return dashboard(
 			"new container",
 			html`
@@ -113,17 +114,7 @@ export default class implements Route {
 					${err ? html` <p style="color: var(--primary)">Error! ${err?.message}</p> ` : ""}
 					<form method="post">
 						<label for="image">Image</label>
-						<input
-							type="text"
-							id="image"
-							name="image"
-							list="suggestions"
-							placeholder="dxflrs/garage:v0.8.2"
-							autocorrect="off"
-							autocapitalize="off"
-							autofocus
-							required
-						/>
+						<input type="text" id="image" name="image" list="suggestions" placeholder="dxflrs/garage:v0.8.2" autocorrect="off" autocapitalize="off" autofocus required />
 						<datalist id="suggestions"></datalist>
 						<label for="name">Container name</label>
 						<input type="text" id="name" name="name" required />
