@@ -1,5 +1,9 @@
 # mission control
 
+Experimental Docker container management system.
+
+**WIP, not ready for production**
+
 ## To install dependencies:
 
 ```bash
